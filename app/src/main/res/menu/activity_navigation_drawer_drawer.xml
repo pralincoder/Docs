@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/ic_contract"
+            android:title="Required Documents" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_doc_guide"
+            android:title="Step Guidence" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/ic_demo_form"
+            android:title="Demo Forms" />
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/ic_office_location"
+            android:title="Office Location" />
+    </group>
+
+
+        <group>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_star"
+                android:title="Favourite" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_customer_service"
+                android:title="FAQs" />
+        </group>
+
+
+
+</menu>

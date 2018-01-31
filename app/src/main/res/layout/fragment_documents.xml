@@ -1,0 +1,20 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/materialWhite"
+    tools:context="com.mgassociates.bluefin.docs.Fragments.DocumentsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+   <android.support.v7.widget.RecyclerView
+       android:background="@color/lightestGrey"
+       android:layout_marginTop="@dimen/mainMargin"
+       android:layout_marginLeft="@dimen/mainMargin"
+       android:layout_marginRight="@dimen/mainMargin"
+       android:id="@+id/requiredDocsRecyclerView"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+   </android.support.v7.widget.RecyclerView>
+
+</FrameLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:id="@+id/subCategoryRL"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/lightestGrey"
+    android:layout_marginBottom="@dimen/smallMargin"
+    android:layout_marginRight="@dimen/smallMargin"
+    android:padding="@dimen/mainMargin"
+    >
+
+
+
+    <ImageView
+        android:id="@+id/subCategoryImage"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="16dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_launcher_background" />
+
+    <TextView
+        android:id="@+id/subCategoryName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/subCategoryImage"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/monoglyceride"
+        android:textAlignment="center"
+        android:text="Passport Renew"
+        android:textColor="@color/materialBlack"
+        android:textStyle="bold" />
+
+</RelativeLayout>

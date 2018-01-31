@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/materialWhite"
+    android:orientation="vertical">
+
+
+    <com.github.florent37.arclayout.ArcLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/diagonalLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".5"
+        app:arc_height="@dimen/fab_margin"
+        app:arc_cropDirection="cropOutside"
+        app:arc_position="bottom">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <com.flaviofaria.kenburnsview.KenBurnsView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffff"
+            android:scaleType="fitXY"
+            android:src="@drawable/ktm_city" />
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:scaleType="fitXY"
+                android:layout_centerInParent="true"
+                android:src="@drawable/main_logo"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_menu"
+                android:padding="8dp"
+                android:scaleType="fitXY"
+                android:id="@+id/drawer_icon"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:src="@drawable/ic_settings"
+                android:scaleType="fitXY"
+                android:layout_alignParentRight="true"/>
+            <FrameLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                tools:context=".MainActivity"
+                android:background="@color/materialBlack"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:onClick="animate">
+
+                <ImageView
+                    android:id="@+id/search"
+                    android:layout_gravity="center"
+                    android:layout_width="150dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/search_bar"
+                    android:onClick="animate" />
+
+                <EditText
+                    android:id="@+id/text"
+                    android:layout_width="150dp"
+                    android:layout_height="22dp"
+                    android:layout_gravity="center"
+                    android:background="@null"
+                    android:textSize="12sp"
+                    android:paddingStart="4dp"
+                    android:alpha="0"
+                    tools:ignore="RtlCompat" />
+
+            </FrameLayout>
+
+
+        </RelativeLayout>
+
+    </com.github.florent37.arclayout.ArcLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".5"
+        android:background="@color/materialWhite"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:background="@color/materialWhite"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/requiredDocumentLL"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/smallMargin"
+                android:layout_weight=".5"
+                android:orientation="vertical"
+                android:background="@color/materialWhite"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="@dimen/mainPageImageSIze"
+                    android:layout_height="@dimen/mainPageImageSIze"
+                    android:layout_centerHorizontal="true"
+                    android:tint="@color/colorAccent"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_contract"
+
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:layout_marginTop="@dimen/fab_margin"
+                    android:fontFamily="@font/monoglyceride"
+                    android:textSize="@dimen/textSizeNormal"
+                    android:textColor="@color/colorAccent"
+                    android:text="REQUIRED DOCUMENTS"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorAccent" />
+
+            <LinearLayout
+                android:id="@+id/stepsLL"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".5"
+                android:orientation="vertical"
+                android:background="@color/materialWhite"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="@dimen/mainPageImageSIze"
+                    android:layout_height="@dimen/mainPageImageSIze"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:tint="@color/colorAccent"
+                    android:rotationY="180"
+                    android:src="@drawable/ic_doc_guide"
+
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:layout_marginTop="@dimen/fab_margin"
+                    android:fontFamily="@font/monoglyceride"
+                    android:textSize="@dimen/textSizeNormal"
+                    android:textColor="@color/colorAccent"
+                    android:text="STEP GUIDANCE"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/colorAccent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:background="@color/materialWhite">
+
+            <LinearLayout
+                android:id="@+id/demoFormLL"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/smallMargin"
+                android:layout_weight=".5"
+                android:orientation="vertical"
+                android:background="@color/materialWhite"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="@dimen/mainPageImageSIze"
+                    android:layout_height="@dimen/mainPageImageSIze"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:tint="@color/colorAccent"
+                    android:src="@drawable/ic_demo_form"
+
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:layout_marginTop="@dimen/fab_margin"
+                    android:fontFamily="@font/monoglyceride"
+                    android:textSize="@dimen/textSizeNormal"
+                    android:textColor="@color/colorAccent"
+                                android:text="DEMO FORMS"/>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorAccent" />
+
+
+            <LinearLayout
+                android:id="@+id/officeLocationLL"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".5"
+                android:orientation="vertical"
+                android:background="@color/materialWhite"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="@dimen/mainPageImageSIze"
+                    android:layout_height="@dimen/mainPageImageSIze"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:tint="@color/colorAccent"
+                    android:src="@drawable/ic_office_location"
+
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:layout_marginTop="@dimen/fab_margin"
+                    android:fontFamily="@font/monoglyceride"
+                    android:textSize="@dimen/textSizeNormal"
+                    android:textColor="@color/colorAccent"
+                    android:text="OFFICE LOCATION"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

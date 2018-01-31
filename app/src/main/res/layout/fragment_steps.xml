@@ -1,0 +1,34 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightestGrey"
+    tools:context="com.mgassociates.bluefin.docs.Fragments.StepsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/comingSoonTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:fontFamily="@font/monoglyceride"
+            android:text="COMING SOON..."
+            android:layout_centerInParent="true"
+            android:textColor="@color/materialBlack"
+            android:textSize="56sp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/stepsRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingRight="@dimen/mainMargin"
+            android:paddingLeft="@dimen/mainMargin"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+</FrameLayout>

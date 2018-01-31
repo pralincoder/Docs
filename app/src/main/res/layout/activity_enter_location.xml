@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/mainMargin"
+    tools:context="com.mgassociates.bluefin.docs.Activities.EnterLocationActivity">
+
+
+    <EditText
+        android:id="@+id/cityName"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:fontFamily="@font/monoglyceride"
+        android:hint="Enter Your City"
+        android:textAlignment="center"
+        android:textColor="@color/materialBlack"
+        android:textColorHint="@color/materialBlack" />
+
+    <Button
+        android:id="@+id/gotoMapButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/colorPrimary"
+        android:fontFamily="@font/monoglyceride"
+        android:text="View"
+        android:textColor="@color/materialWhite"
+        android:textSize="@dimen/textSizeNormal" />
+</LinearLayout>

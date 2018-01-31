@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.mgassociates.bluefin.docs.Activities.DetailPageActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_bar_height"
+        android:fitsSystemWindows="true"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:toolbarId="@+id/toolbar">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_detail_page" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="@dimen/fab_margin"
+        app:backgroundTint="@color/colorPrimary"
+        app:srcCompat="@drawable/ic_add_24dp"
+        tools:ignore="VectorDrawableCompat"
+         />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_mail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="86dp"
+        app:backgroundTint="@color/colorPrimary"
+        android:layout_marginRight="@dimen/fab_margin"
+        android:src="@drawable/ic_email_24dp"
+        app:elevation="6dp"
+        android:visibility="invisible"
+        app:pressedTranslationZ="12dp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_locate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="156dp"
+        android:layout_marginRight="@dimen/fab_margin"
+        android:visibility="invisible"
+        app:backgroundTint="@color/colorPrimary"
+        android:src="@drawable/ic_location_on_24dp"
+        app:elevation="6dp"
+        app:pressedTranslationZ="12dp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        app:backgroundTint="@color/colorPrimary"
+        android:layout_marginBottom="226dp"
+        android:layout_marginRight="@dimen/fab_margin"
+        android:visibility="invisible"
+        android:src="@drawable/ic_call_24dp"
+        app:elevation="6dp"
+        app:pressedTranslationZ="12dp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_website"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="296dp"
+        android:visibility="invisible"
+        app:backgroundTint="@color/colorPrimary"
+        android:layout_marginRight="@dimen/fab_margin"
+        android:src="@drawable/internet_icon"
+        app:elevation="6dp"
+        app:pressedTranslationZ="12dp" />
+
+
+</android.support.design.widget.CoordinatorLayout>

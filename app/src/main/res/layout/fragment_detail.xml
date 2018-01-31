@@ -1,0 +1,155 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mgassociates.bluefin.docs.Fragments.DetailFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/mainMargin">
+
+        <TextView
+            android:id="@+id/subCategoryHeading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/monoglyceride"
+            android:text="Passport"
+            android:textAlignment="center"
+            android:textColor="@color/materialBlack"
+            android:textSize="@dimen/textSizeBig" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/smallMargin"
+            android:background="@color/colorPrimary" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/smallMargin"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/emailAddressTExtView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/monoglyceride"
+                android:text="email Address"
+                android:textSize="@dimen/textSizeNormal" />
+
+            <TextView
+                android:id="@+id/phoneNumberTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/monoglyceride"
+                android:text="phone Number"
+                android:textSize="@dimen/textSizeNormal" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/smallMargin"
+            android:background="@color/colorPrimary" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/smallMargin"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/monoglyceride"
+                android:text="BUDGET REQUIRED   ::"
+                android:textColor="@color/materialBlack"
+                android:textSize="@dimen/textSizeNormal"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/budgetTextVIew"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/fab_margin"
+                android:fontFamily="@font/monoglyceride"
+                android:text="Rs 1000"
+                android:textColor="@color/materialBlack"
+                android:textSize="@dimen/textSizeNormal"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/smallMargin"
+            android:background="@color/colorPrimary" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="124dp"
+            android:layout_marginTop="@dimen/smallMargin"
+            android:background="@android:color/transparent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/seeRequiredDocumentsLL"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".5"
+                android:background="@color/lightestGrey"
+                android:layout_marginRight="@dimen/smallMargin"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:src="@drawable/required_documents_icon"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/monoglyceride"
+                    android:textStyle="bold"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/materialBlack"
+                    android:text="See Required Documents"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/seeStepsLL"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".5"
+                android:background="@color/lightestGrey"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:src="@drawable/steps_icon"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/monoglyceride"
+                    android:textStyle="bold"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/materialBlack"
+                    android:text="See Steps"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>
